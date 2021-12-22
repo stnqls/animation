@@ -1,0 +1,195 @@
+html,
+body,
+div,
+h1,
+button {
+  margin: 0;
+  padding: 0;
+}
+.buttons {
+  padding: 20px;
+}
+.buttons .buttons-title {
+  margin-bottom: 10px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+/* 첫번째 버튼 */
+.buttons .button1 {
+  background: linear-gradient(25deg, #306981, #d0dbc8, #f88d1a);
+}
+.buttons .button1:hover {
+  background: linear-gradient(25deg, #5bc1ec, #ebf8e1, #f5bc7f);
+}
+
+/* 두번째 버튼 */
+.buttons .button2 {
+  background-color: #f5bc7f;
+}
+.buttons .button2::before {
+  height: 0%;
+  width: 2px;
+}
+.buttons .button2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* 세번째 버튼 */
+.buttons .button3 {
+  position: relative;
+  background: linear-gradient(
+    rgba(0, 172, 238, 1) 50%,
+    rgba(2, 126, 251, 1) 100%
+  );
+}
+.buttons .button3 .btn3__div {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons .button3:before,
+.buttons .button3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.3s ease;
+}
+.buttons .button3:before {
+  height: 0%;
+  width: 2px;
+}
+.buttons .button3:after {
+  height: 2px;
+  width: 0%;
+}
+.buttons .button3:hover {
+  background: transparent;
+  box-shadow: none;
+  color: rgba(2, 126, 251, 1);
+}
+.buttons .button3:hover:before {
+  height: 100%;
+}
+.buttons .button3:hover:after {
+  width: 100%;
+}
+.buttons .button3 .btn3__div:hover {
+  color: rgb(2, 126, 251);
+}
+.buttons .button3 .btn3__div::before,
+.buttons .button3 .btn3__div::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgb(2, 125, 251);
+  transition: all 0.5s ease;
+}
+.buttons .button3 .btn3__div::before {
+  width: 2px;
+  height: 0%;
+}
+.buttons .button3 .btn3__div::after {
+  height: 2px;
+  width: 0%;
+}
+.buttons .button3 .btn3__div:hover::before {
+  height: 100%;
+}
+.buttons .button3 .btn3__div:hover::after {
+  width: 100%;
+}
+
+/* 네번째 버튼 */
+.buttons .button4 {
+  background: linear-gradient(rgb(247, 150, 192) 10%, rgb(118, 174, 241) 100%);
+  position: relative;
+}
+.buttons .button4 .btn4__div {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons .button4:before,
+.buttons .button4:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.buttons .button4:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.buttons .button4:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.buttons .button4:hover {
+  background: transparent;
+  color: #76aef1;
+  box-shadow: none;
+}
+.buttons .button4:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.buttons .button4:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.buttons .btn4__div:before,
+.buttons .btn4__div:after {
+  position: absolute;
+  content: "";
+  box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+    -4px -4px 5px 0px rgba(255, 255, 255, 1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.buttons .btn4__div:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 0.5px;
+  transition: all 500ms ease;
+}
+.buttons .btn4__div:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.5px;
+  transition: all 500ms ease;
+}
+.buttons .btn4__div:hover:before {
+  width: 100%;
+}
+.buttons .btn4__div:hover:after {
+  width: 100%;
+}
+/* 다섯번째 버튼 */
+.buttons .button5 {
+}
+
+/* 여섯번째 버튼 */
+.buttons .button6 {
+}
